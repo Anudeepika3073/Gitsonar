@@ -6,9 +6,9 @@
   "license": "SAP SAMPLE CODE LICENSE",
   "repository": "https://github.com/SAP-samples/cap-sflight",
   "engines": {
-    "node": ">=20"
+  "node": ">=20"
 },
-"scripts": {
+  "scripts": {
   "lint": "eslint . -f checkstyle -o lint.xml",
   "lint:sonar": "eslint . -f sonarqube -o eslint-report.json",
   "start": "cds-serve",
@@ -20,7 +20,7 @@
     "@sap/cds": ">=9.5",
     "@sap/xssec": "^4",
     "express": "^4"
-  },
+ },
  "devDependencies": {
   "@cap-js/cds-test": "^0",
   "@cap-js/cds-typer": "^0.38.0",
