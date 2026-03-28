@@ -8,37 +8,38 @@
   "engines": {
     "node": ">=20"
   },
- "scripts": {
+"scripts": {
   "lint": "eslint .",
-  "lint:sonar": "eslint . -f json -o eslint-report.json",
+  "lint:sonar": "eslint . -f sonarqube -o eslint-report.json",
   "start": "cds-serve",
   "build:ui": "npm run build --prefix app/travel_analytics && npm run build --prefix app/travel_processor",
   "test": "jest"
-}
+},
   "dependencies": {
     "@cap-js/hana": ">=2",
     "@sap/cds": ">=9.5",
     "@sap/xssec": "^4",
     "express": "^4"
   },
-  "devDependencies": {
-    "@cap-js/cds-test": "^0",
-    "@cap-js/cds-typer": "^0.38.0",
-    "@cap-js/cds-types": "^0",
-    "@cap-js/sqlite": ">=2",
-    "@sap/cds-dk" : ">=9.5",
-    "@sap/ux-specification": "UI5-1.139",
-    "@types/jest": "^30.0.0",
-    "cds-plugin-ui5": "^0.13.1",
-    "cross-spawn": "^7.0.3",
-    "eslint": "^9",
-    "http-proxy": "^1.18.1",
-    "jest": "^30.1.0",
-    "qunit": "^2.9.3",
-    "ts-jest": "^29.2.5",
-    "tsx": "^4.19.2",
-    "typescript-eslint": "^8.12.2"
-  },
+ "devDependencies": {
+  "@cap-js/cds-test": "^0",
+  "@cap-js/cds-typer": "^0.38.0",
+  "@cap-js/cds-types": "^0",
+  "@cap-js/sqlite": ">=2",
+  "@sap/cds-dk": ">=9.5",
+  "@sap/ux-specification": "UI5-1.139",
+  "@types/jest": "^30.0.0",
+  "cds-plugin-ui5": "^0.13.1",
+  "cross-spawn": "^7.0.3",
+  "eslint": "9.18.0",
+  "eslint-formatter-sonarqube": "^1.0.0",
+  "http-proxy": "^1.18.1",
+  "jest": "^30.1.0",
+  "qunit": "^2.9.3",
+  "ts-jest": "^29.2.5",
+  "tsx": "^4.19.2",
+  "typescript-eslint": "^8.12.2"
+},
   "cds": {
     "requires": {
       "db": {
