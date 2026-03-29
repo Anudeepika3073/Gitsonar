@@ -5,10 +5,9 @@
   "engines": {
     "node": ">=20"
   },
-  
   "scripts": {
-    "lint": "eslint . -f checkstyle -o lint.xml",
-    "lint:sonar": "eslint . -f sonarqube -o eslint-report.json",
+    "lint": "eslint 'src/**/*.js' -f checkstyle -o reports/lint.xml",
+    "lint:sonar": "eslint 'src/**/*.js' -f sonarqube -o reports/eslint-report.json",
     "test": "jest"
   },
   "devDependencies": {
