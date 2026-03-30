@@ -6,12 +6,12 @@
     "node": ">=20"
   },
   "scripts": {
-    "lint": "eslint 'src/**/*.js' -f checkstyle -o reports/lint.xml",
-    "lint:sonar": "eslint 'src/**/*.js' -f sonarqube -o reports/eslint-report.json",
+    "lint": "eslint .",
+    "lint:sonar": "eslint . -f json -o eslint-report.json",
     "test": "jest"
   },
   "devDependencies": {
-    "eslint": "9.18.0",
+    "eslint": "^9.0.0",
     "eslint-formatter-sonarqube": "^1.0.0",
     "jest": "^30.1.0"
   }
