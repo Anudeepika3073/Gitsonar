@@ -8,7 +8,7 @@
   "scripts": {
     "lint": "eslint .",
     "lint:sonar": "eslint . -f json -o eslint-report.json || true",
-    "test": "jest"
+    "test": "jest --coverage"
   },
   "devDependencies": {
     "eslint": "^9.0.0",
