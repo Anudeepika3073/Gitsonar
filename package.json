@@ -7,7 +7,7 @@
   },
   "scripts": {
     "lint": "eslint .",
-    "lint:sonar": "eslint . -f json -o eslint-report.json || true",
+    "lint:sonar": "eslint . -f json -o eslint-report.json",
     "test": "jest --coverage"
   },
   "devDependencies": {
