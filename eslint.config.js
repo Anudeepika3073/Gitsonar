@@ -19,7 +19,12 @@ module.exports = [
       },
     },
     rules: {
-      "no-console": "off"
+      "no-console": "warn",
+      "eqeqeq": "error",
+      "no-var": "error",
+      "semi": ["error", "always"],
+      "quotes": ["error", "single"],
+      "indent": ["error", 2]
     },
   },
 ];
