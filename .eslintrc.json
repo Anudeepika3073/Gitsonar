@@ -2,11 +2,18 @@
   "env": {
     "node": true,
      "es6": true
+     "browser": true
   },
   "extends": "eslint:recommended",
+   "parserOptions": {
+   "ecmaVersion": 2020, // Specify the ECMAScript version (you can adjust as needed)
+    "sourceType": "module" // Use "module" for ES modules if applicable
+  },
   "rules": {
     "no-var": "error",
     "semi": ["error", "always"],
     "no-console": "warn"
+    "eqeqeq": "error", // Enforce strict equality
+    "camelcase": "warn" // Enforce camelCase naming convention
   }
 }
