@@ -7,7 +7,7 @@
   },
   "scripts": {
     "lint": "eslint .",
-    "lint:sonar": "eslint . -f json -o eslint-report.json",
+    "lint:sonar": "eslint . --ext .js,.ts -f json -o eslint-report.json --no-error-on-unmatched-pattern --cwd .",
     "test": "jest --coverage"
   },
   "devDependencies": {
